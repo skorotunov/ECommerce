@@ -13,6 +13,8 @@ namespace WebUI
         {
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
+            var root = new CompositionRoot();
+            ControllerBuilder.Current.SetControllerFactory(root.ControllerFactory);
         }
     }
 }
