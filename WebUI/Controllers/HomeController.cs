@@ -1,4 +1,5 @@
 ﻿using System.Web.Mvc;
+using WebUI.Models;
 
 namespace WebUI.Controllers
 {
@@ -6,6 +7,7 @@ namespace WebUI.Controllers
     {
         public ActionResult Index()
         {
+            var vm = new FeaturedProductsViewModel();
             return this.View();
         }
     }

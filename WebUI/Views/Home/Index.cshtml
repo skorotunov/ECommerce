@@ -1,13 +1,14 @@
-﻿@{
+﻿@model FeaturedProductsViewModel
+@{
     ViewBag.Title = "Home";
 }
 
 <h2>Featured Products</h2>
 <div>
-    @*@foreach (var product in Model.Products)
+    @foreach (var product in Model.Products)
     {
         <div>
             @Html.Encode(product.SummaryText)
         </div>
-    }*@
+    }
 </div>
